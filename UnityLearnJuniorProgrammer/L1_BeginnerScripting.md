@@ -681,12 +681,6 @@ void Update () //with deltaTime: change to intensity would happen per second
 
 >Please note when smoothing a value, it is often best to use the ```SmoothDamp``` function. Only use ```Lerp``` for smoothing if you are sure of the effect you want
 
-_TODO: double check and experiment to see what are the different smoothing effects (Lerp vs SmoothDamp)_
-
-#### SLerp 
-
-_TODO: please complete this section!!! 
-
 
 <h3>#15: Destroy</h3>
 
@@ -1321,7 +1315,7 @@ public class UsingInstantiate : MonoBehaviour
         if(Input.GetButtonDown("Fire1"))
         {
             Rigidbody rocketInstance;
-            rocketInstance = Instantiate(rocketPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody; //TODO: Ask Cash!
+            rocketInstance = Instantiate(rocketPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody; 
             rocketInstance.AddForce(barrelEnd.forward * 5000);
         }
     }
@@ -1422,8 +1416,6 @@ public class InvokeRepeating : MonoBehaviour
 - Enumerations can be created either inside or outside of a class. 
 
 - Changing the type of enums normally is for optimization 
-
-;TODO: Ask Cash!
 
 ```C#
 using UnityEngine;
